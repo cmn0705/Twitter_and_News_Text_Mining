@@ -6,6 +6,8 @@
 
 **Note**: The data pipline for this project starts from Tweets, but you can use many parts of this project for any other kind of text, such as News.
 
+**Tools:** *pandas, numpy, scipy, re, nltk, spacy, gensism, sklearn, datetime, matplotlib, yfinance, binascii, random, langdetect, json, twitter.Api*
+
 **Notebooks:**
 - Get Tweets with a keyword and save to CSV or JSON files
     - *twitter.Api, pandas, json*
