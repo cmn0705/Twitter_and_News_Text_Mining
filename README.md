@@ -1,15 +1,35 @@
-*Tags: Python, Text Mining, Twitter API*
+*Tags: Python, Machine Learning, Data Engineering, Text Mining*
 
-[01.Get Tweets and save to CSV or JSON file](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/01.Get%20Tweets%20and%20save%20to%20CSV%20or%20JSON%20file.ipynb)<br>
-[02.Get data from json file](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/02.Get%20data%20from%20json%20file.ipynb)<br>
-[03.Language detection and clear non-english articles](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/03.Language%20detection%20and%20clear%20non-english%20articles.ipynb)<br>
-[04.Clean spams](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/04.Clean%20spams.ipynb)<br>
-[05.1.Document Similarity](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/05.1.Document%20Similarity.ipynb)<br>
-[05.2.Deduplication using LSH](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/05.2.Deduplication%20using%20LSH.ipynb)<br>
-[06.Word Frequency & Text summarization](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/06.Word%20Frequency%20%26%20Text%20summarization.ipynb)<br>
-[07.Entity Recognition](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/07.Entity%20Recognition.ipynb)<br>
-[08.Topic Modeling using Gensism](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/08.Topic%20Modeling%20using%20Gensism.ipynb)<br>
-[09.1.Testing Different Sentiment Predict Models](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/09.1.Testing%20Different%20Sentiment%20Predict%20Models.ipynb)<br>
-[09.2.Sentiment Predict](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/09.2.Sentiment%20Predict.ipynb)<br>
-[10.Extract Stock Prices & Visualize](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/10.Extract%20Stock%20Prices%20%26%20Visualize.ipynb)<br>
-[11.Tweet Sentiment vs. Stock Changes](https://github.com/cmn0705/Twitter_Text_Mining/blob/master/notebooks/11.Tweet%20Sentiment%20vs.%20Stock%20Changes.ipynb)<br>
+**Description**: This Python project can pull tweets from Twitter given a keyword, save and retrieve them from CSV or JSON files, detect languages and clear non-english texts, clean spams and similar content texts, extract word frequency and summarize a document, recognize entities in a document, build topics model for a document, predict sentiment from texts, extract live stock quotes and compare the stock movement with the related tweets semtiment.
+
+**Limitation**: For instant run, you can only get tweets from the last 7 days (Twitter limitation). If want more data, you can run the program in auto mode for an extended time.
+
+**Note**: The data pipline for this project starts from Tweets, but you can use many parts of this project for any other kind of text, such as News.
+
+**Notebooks:**
+- Get Tweets with a keyword and save to CSV or JSON files
+    - *twitter.Api, pandas, json*
+- Procress semistructured data (json) to structured data (csv)
+    - *pandas, json*
+- Detect languages of documents and clear non-english documents
+    - *langdetect.detect*
+- Clear spam messages with a supervised machine learning model 
+    - *sklearn, re, numpy, scipy.sparse*
+- Compute similarity score of any 2 documents 
+    - *nltk*
+- Remove similar documents using Locality Sensitive Hashing (LSH)
+    - *binascii, random*
+- Extract word frequency & summarize text
+    - *spacy, nltk, sklearn.feature_extraction, gensim.summarization*
+- Recognize entities 
+    - *spacy*
+- Build topics model from text
+    - *sklearn.feature_extraction.text.CountVectorizer, gensim.matutils.Sparse2Corpus, gensim.models.ldamodel*
+- Test different sentiment predict models
+    - *nltk.sentiment.vader, sklearn* 
+- Predict sentiment from text with the best-scored supervised machine learning model 
+    - *sklearn*
+- Extract live stock quotes and visualize their movement 
+    - *yfinance, matplotlib*
+- Compare Tweets Sentiment with stock price changes
+    - *pandas, datetime, matplotlib*
