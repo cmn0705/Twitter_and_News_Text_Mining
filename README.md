@@ -2,11 +2,11 @@
 
 **Description**: This Python project can pull tweets from Twitter given a keyword, save and retrieve them from CSV or JSON files, detect languages and clear non-english texts, clean spams and similar content texts, extract word frequency and summarize a document, recognize entities in a document, build topics model for a document, predict sentiment from texts, extract live stock quotes and compare the stock movement with the related tweets semtiment.
 
+**Tools:** *pandas, numpy, scipy, re, nltk, spacy, gensism, sklearn, datetime, matplotlib, yfinance, binascii, random, langdetect, json, twitter.Api*
+
 **Limitation**: For instant run, you can only get tweets from the last 7 days (Twitter limitation). If want more data, you can run the program in auto mode for an extended time.
 
 **Note**: The data pipline for this project starts from Tweets, but you can use many parts of this project for any other kind of text, such as News.
-
-**Tools:** *pandas, numpy, scipy, re, nltk, spacy, gensism, sklearn, datetime, matplotlib, yfinance, binascii, random, langdetect, json, twitter.Api*
 
 **Notebooks:**
 - Get Tweets with a keyword and save to CSV or JSON files
