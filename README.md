@@ -10,7 +10,7 @@
 
 **Limitation**: For instant run, you can only get tweets from the last 7 days (Twitter limitation). If want more data, you can run the program in auto mode for an extended time.
 
-**Note**: The data pipline for this project starts from Tweets, but you can use many parts of this project for any other kind of text, such as News. In facts, some of the part demonstrated here is  overkilled for short-texts like tweets and more appropirate for long documents.
+**Note**: The data pipline for this project starts from Tweets, but you can use many parts of this project for any other kind of text, such as News. In fact, some of the parts demonstrated here is  overkilled for short-texts like tweets and more appropirate for long documents.
 
 **Notebooks:**
 - Get Tweets with a keyword and save to CSV or JSON files
