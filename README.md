@@ -35,6 +35,10 @@
     - *nltk.sentiment.vader, sklearn* 
 - Predict sentiment from text with the best-scored supervised machine learning model 
     - *sklearn*
+- Train sentiment predictor and save model (Spark)
+    - *Databricks, pyspark, mlflow*
+- Apply sentiment model on new data (Spark)
+    - *Databricks, PostgreSQL JDBC, pyspark, mlflow*
 - Extract live stock quotes and visualize their movement 
     - *yfinance, matplotlib*
 - Compare Tweets Sentiment with stock price changes
